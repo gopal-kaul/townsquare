@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="flex flex-col gap-4 w-1/2 lg:w-full">
+          <div className="flex flex-col gap-4 w-1/2 lg:w-auto">
             <div className="">
               <img src="i4.png" className="object-cover" />
             </div>
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full p-[5%] bg-black flex gap-[5%] flex-col lg:flex-row-reverse items-center justify-center">
-          <div className="w-1/2 lg:w-full">
+          <div className="w-1/2 lg:w-auto">
             <img src="i7.png" className="object-cover" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="w-1/2 lg:w-full">
+          <div className="w-1/2 lg:w-auto">
             <img src="i8.png" className="object-cover" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
