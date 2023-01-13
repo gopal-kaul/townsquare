@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[5%]">
+        <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[20%] md:py-[5%]">
           <div className="flex flex-col items-center">
             <div className="relative w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
               <img src="i1.png" className="object-cover" />
@@ -75,8 +75,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="flex flex-col gap-4 w-1/2 lg:w-auto">
+        <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+          <div className="flex flex-col gap-4">
             <div className="">
               <img src="i4.png" className="object-cover" />
             </div>
@@ -97,8 +97,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex gap-[5%] flex-col lg:flex-row-reverse items-center justify-center">
-          <div className="w-1/2 lg:w-auto">
+        <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex gap-[5%] flex-col lg:flex-row-reverse items-center justify-center">
+          <div className="">
             <img src="i7.png" className="object-cover" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
@@ -111,8 +111,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="w-1/2 lg:w-auto">
+        <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+          <div className="">
             <img src="i8.png" className="object-cover" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
@@ -131,8 +131,8 @@ export default function Home() {
               In a world so connected, it can be really hard to make friends
             </h2>
             <h4 className="text-[4vw] md:text-[2.3vw] lg:text-[2.1vw] text-[#A586A4] leading-tight pt-[2%] md:pr-[30%]">
-              We are dedicated to building products which help you,
-              inspire you and bring you joy
+              We are dedicated to building products which help you, inspire you
+              and bring you joy
             </h4>
           </div>
         </section>
@@ -148,19 +148,47 @@ export default function Home() {
               We are team ninja working on this, you can get in touch with us on
               the emails below.
             </h4>
-            <form action="#" className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[25%] pt-[5%]">
+            <form
+              action="/api/email"
+              method="POST"
+              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[25%] pt-[5%]"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const url = form.action;
+                const formData = new FormData(form);
+                fetch(url, {
+                  method: "POST",
+                  body: JSON.stringify(Object.fromEntries(formData.entries())),
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                  },
+                })
+                  .then((_) => alert("Submitted Successfully!"))
+                  .catch((e) => console.error(e));
+              }}
+            >
               <input
                 placeholder="Your name"
                 type="text"
                 required
-                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none md:w-[150%]"
+                name="name"
+                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
               />
               <input
                 placeholder="Your email"
                 type="email"
                 required
-                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none md:w-[150%]"
+                name="email"
+                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
               />
+              <button
+                className="w-[150%] bg-white rounded-sm py-2"
+                type="submit"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </section>
