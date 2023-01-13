@@ -11,23 +11,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="overflow-y-scroll scroll-smooth">
-        <section className="px-[5%] bg-black h-screen w-screen">
+        <section className="px-[5%] bg-black w-full pb-[5%]">
           <h2 className="font-aveFedan text-titleColor text-titleSize py-[5%]">
             townsquare
           </h2>
-          <div className="flex flex-row-reverse items-center gap-[5%]">
-            <div className="w-1/2">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-[5%]">
+            <div className="mb-[5%] lg:mb-0 sm:w-2/3 md:w-3/4 lg:w-1/2">
               <img
                 src="hero.png"
                 alt="Hero text"
                 className="object-contain h-full"
               />
             </div>
-            <div className="w-1/2">
-              <h3 className="text-white text-[3vw] font-bold leading-tight">
+            <div className="lg:w-1/2">
+              <h3 className="text-white text-[6vw] md:text-[4vw] lg:text-[3vw] font-bold leading-tight">
                 The better way to find friends in your city.
               </h3>
-              <p className="text-blue text-[1.5vw] leading-tight pt-[5%]">
+              <p className="text-blue text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-tight pt-[2%] lg:pt-[5%]">
                 Visit the{" "}
                 <span className="font-bold text-purple">townsquare </span>to
                 find and connect with like-minded people around you.
@@ -35,13 +35,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="px-[5%] bg-[#161623] min-h-screen w-screen grid place-items-center pt-[2%]">
-          <div className="flex flex-col">
-            <div className=" relative">
+        <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[5%]">
+          <div className="flex flex-col items-center">
+            <div className="relative w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
               <img src="i1.png" className="object-cover" />
               <div className="bg-[#C358B3] top-[22%] h-[3px] w-[50%] absolute z-10"></div>
-              <div className="bg-[#C358B3] top-[21.5%] h-[10px] w-[10px] rounded-full absolute z-10"></div>
-              <div className="top-[18%] absolute z-10 -left-[22%] text-[32px] leading-tight">
+              <div className="bg-[#C358B3] top-[22%] h-[3px] w-[3px] scale-[3] lg:scale-[5] rounded-full absolute z-10"></div>
+              <div className="top-[18%] absolute z-10 -left-[24%] text-[1.7vw] leading-tight">
                 <p className="text-white font-bold">5km thing</p>
                 <p className="text-[#9F9FFF]">
                   We show people
@@ -49,11 +49,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative z-10">
+            <div className="relative z-10 w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
               <img src="i2.png" className="object-cover -mt-[20%]" />
               <div className="bg-[#C358B3] -top-[20%] h-[3px] w-[50%] absolute z-10 right-0"></div>
-              <div className="bg-[#C358B3] -top-[21%] h-[10px] w-[10px] rounded-full absolute z-10 right-0"></div>
-              <div className="absolute z-10 text-[32px] leading-tight -top-[24%] -right-[33%]">
+              <div className="bg-[#C358B3] -top-[20%] h-[3px] w-[3px] rounded-full absolute scale-[3] lg:scale-[5] z-10 right-0"></div>
+              <div className="absolute z-10 text-[1.7vw] leading-tight -top-[24%] -right-[35%]">
                 <p className="text-white font-bold">People first</p>
                 <p className="text-[#9F9FFF]">
                   We show people
@@ -61,11 +61,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative z-10">
+            <div className="relative z-10 w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
               <img src="i3.png" className="object-cover -mt-[15%]" />
               <div className="bg-[#C358B3] -top-[7%] h-[3px] w-[80%] absolute z-10"></div>
-              <div className="bg-[#C358B3] -top-[7.5%] h-[10px] w-[10px] rounded-full absolute z-10"></div>
-              <div className="-top-[9%] absolute z-10 -left-[23%] text-[32px] leading-tight">
+              <div className="bg-[#C358B3] -top-[7%] h-[3px] w-[3px] rounded-full absolute z-10 scale-[3] lg:scale-[5]"></div>
+              <div className="-top-[9%] absolute z-10 -left-[26%] text-[1.7vw] leading-tight">
                 <p className="text-white font-bold">Filters</p>
                 <p className="text-[#9F9FFF]">
                   Filters for unique
@@ -75,8 +75,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="flex flex-col gap-4">
+        <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+          <div className="flex flex-col gap-4 w-1/2 lg:w-full">
             <div className="">
               <img src="i4.png" className="object-cover" />
             </div>
@@ -87,39 +87,39 @@ export default function Home() {
               <img src="i6.png" className="object-cover" />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[6vw] leading-[1]">
               Find your tribe.
             </h1>
-            <p className="text-[#977FCC] text-[2.1vw] leading-tight">
+            <p className="text-[#977FCC] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Finding people who are on the same wavelength as you are is now
               easier than ever.
             </p>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex gap-[5%] flex-row-reverse items-center justify-center">
-          <div className="">
+        <section className="w-full p-[5%] bg-black flex gap-[5%] flex-col lg:flex-row-reverse items-center justify-center">
+          <div className="w-1/2 lg:w-full">
             <img src="i7.png" className="object-cover" />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[6vw] leading-[1]">
               Talk to people around you.
             </h1>
-            <p className="text-[#977FCC] text-[1.8vw] leading-tight pt-[2%]">
+            <p className="text-[#977FCC] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Share with people in your area. You never know who you might run
               into!
             </p>
           </div>
         </section>
-        <section className="w-full p-[5%] bg-black flex flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="">
+        <section className="w-full p-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+          <div className="w-1/2 lg:w-full">
             <img src="i8.png" className="object-cover" />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[6vw] leading-[1]">
               Communities unique to you.
             </h1>
-            <p className="text-[#789FC3] text-[1.8vw] pt-[2%] leading-tight">
+            <p className="text-[#789FC3] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] pt-[2%] leading-tight">
               Find and join citywide communities with individuals having similar
               interests, opinions, and backgrounds.
             </p>
@@ -127,39 +127,39 @@ export default function Home() {
         </section>
         <section className="w-full p-[5%] bg-black grid place-items-center">
           <div className="">
-            <h2 className="text-white text-[2.5vw] font-medium">
+            <h2 className="text-white text-[5vw] md:text-[3vw] lg:text-[2.5vw] font-medium leading-[1]">
               In a world so connected, it can be really hard to make friends
             </h2>
-            <h4 className="text-[2.1vw] text-[#A586A4] leading-tight">
+            <h4 className="text-[4vw] md:text-[2.3vw] lg:text-[2.1vw] text-[#A586A4] leading-tight pt-[2%] md:pr-[30%]">
               We are dedicated to building products which help you,
-              <br /> inspire you and bring you joy
+              inspire you and bring you joy
             </h4>
           </div>
         </section>
-        <section className="w-full px-[15%] py-[5%] bg-[#161616] flex flex-row gap-[5%]">
-          <div className="">
+        <section className="w-full px-[15%] py-[5%] bg-[#161616] flex flex-col md:flex-row gap-[5%]">
+          <div className="h-full">
             <img src="i9.png" className="object-cover" />
           </div>
           <div className="flex flex-col">
-            <h2 className="text-white font-bold text-[2vw]">
+            <h2 className="text-white font-bold text-[4vw] md:text-[3vw] lg:text-[2vw]">
               Interested in what we are doing?
             </h2>
-            <h4 className="text-[#B7B7B7] text-[1.5vw] leading-tight">
+            <h4 className="text-[#B7B7B7] text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-tight">
               We are team ninja working on this, you can get in touch with us on
               the emails below.
             </h4>
-            <form action="#" className="flex flex-col w-fit gap-[25%] pt-[5%]">
+            <form action="#" className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[25%] pt-[5%]">
               <input
                 placeholder="Your name"
                 type="text"
                 required
-                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
+                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none md:w-[150%]"
               />
               <input
                 placeholder="Your email"
                 type="email"
                 required
-                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
+                className="bg-transparent text-[#C9C9C9] border border-[#C9C9C9] p-[2%] focus:outline-none md:w-[150%]"
               />
             </form>
           </div>
