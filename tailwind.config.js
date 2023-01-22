@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        aveFedan: ['var(--aveFedan-font)'],
+        aveFedan: ["var(--aveFedan-font)"],
+        roboto: ["var(--font-roboto)"],
       },
       colors: {
         titleColor: "#DBE0FF",
