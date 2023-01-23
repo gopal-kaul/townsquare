@@ -154,28 +154,28 @@ export default function Home() {
           </div>
         </section> */}
         <section className="w-full px-[5%] pt-[20%] pb-[10%] md:pb-0 md:pt-[10%] bg-[#161616] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[10%]">
-          <div className="bg-[#161616]">
-            <h3 className="font-medium text-[#EDEDED] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw]">
+          <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
+            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw]">
               People first
             </h3>
-            <p className="text-[#999999] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               We put &apos;social&apos; back in the social network
             </p>
           </div>
-          <div className="bg-[#151515]">
-            <h3 className="font-medium text-[#EDEDED] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] md:pr-[40%] leading-tight">
+          <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
+            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] md:pr-[40%] leading-tight">
               Location based
             </h3>
-            <p className="text-[#999999] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               The people and communities you discover change based on your
               location.
             </p>
           </div>
-          <div className="bg-[#151515]">
-            <h3 className="font-medium text-[#EDEDED] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+          <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
+            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
               Keep up with your City
             </h3>
-            <p className="text-[#999999] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               A summary of all prominent events in your city is only a click
               away.
             </p>
@@ -256,7 +256,7 @@ export default function Home() {
             <form
               action="/api/email"
               method="POST"
-              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[25%] pt-[5%]"
+              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[10%] pt-[5%]"
               onSubmit={(e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
@@ -279,17 +279,17 @@ export default function Home() {
                 type="text"
                 required
                 name="name"
-                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
+                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md"
               />
               <input
                 placeholder="Your email"
                 type="email"
                 required
                 name="email"
-                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%]"
+                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md"
               />
               <button
-                className="w-[150%] bg-white rounded-sm py-2"
+                className="w-[150%] bg-white rounded-md py-2 transition-colors duration-200 ease-in-out hover:bg-black hover:text-white"
                 type="submit"
               >
                 Submit
