@@ -5,57 +5,52 @@ export default function Home() {
     <>
       <Head>
         <title>Townsquare</title>
-        <meta name="description" content="The better way to find friends in your city." />
+        <meta
+          name="description"
+          content="The better way to find friends in your city."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="overflow-y-scroll scroll-smooth">
-        <section className="px-[5%] bg-black w-full pb-[5%]">
-          <h2 className="font-aveFedan text-titleColor text-titleSize py-[5%]">
+      <main className="overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+        <section className="px-[5%] bg-[#010124] w-full h-screen snap-start relative flex flex-col md:flex-row-reverse justify-center items-center gap-[5%]">
+          <h2 className="font-aveFedan text-titleColor text-titleSize top-[5%]  absolute  left-[5%]">
             townsquare
           </h2>
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-[5%]">
-            <div className="mb-[5%] lg:mb-0 sm:w-2/3 md:w-3/4 lg:w-1/2">
-              <img
-                src="hero.png"
-                alt="Hero text"
-                className="object-contain h-full"
-              />
-            </div>
-            <div className="lg:w-1/2">
-              <h3 className="text-white text-[6vw] md:text-[4vw] lg:text-[3vw] font-bold leading-tight">
-                The better way to find friends in your city.
-              </h3>
-              <p className="text-blue text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-tight pt-[2%] lg:pt-[5%]">
-                Visit the{" "}
-                <span className="font-bold text-purple">townsquare </span>to
-                find and connect with like-minded people around you.
-              </p>
-            </div>
+          <img
+            src="hero.png"
+            alt="Hero text"
+            className="object-contain md:w-3/4"
+          />
+          <div className="w-full md:w-1/2">
+            <h3 className="text-white text-[8vw] md:text-[4vw] lg:text-[3vw] font-bold leading-[1]">
+              The better way to meet people in your city.
+            </h3>
+            <p className="text-blue text-[5vw] md:text-[2vw] lg:text-[1.5vw] leading-tight pt-[2%] lg:pt-[5%] pb-[5%] md:pb-0">
+              Visit the{" "}
+              <span className="font-bold text-purple">townsquare </span>to find
+              and connect with like-minded people around you.
+            </p>
           </div>
         </section>
-        <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-[#493672] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex flex-row gap-8">
-              <button className="uppercase border-4 text-[#9867FF] border-[#9867FF] p-2 text-sm sm:text-lg md:text-2xl rounded-lg font-roboto font-bold">
-                The square
-              </button>
-              <button className="uppercase text-[#7658B8] py-2 border-b border-[#7658B8] text-xs sm:text-lg md:text-xl font-roboto font-bold">
-                your city
-              </button>
-            </div>
-            <div className="">
-              <img src="s1.png" className="object-cover" />
+        <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-[#493672] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start h-screen">
+          <div className="flex flex-col items-center gap-4 w-full lg:w-1/2">
+            <div className="relative z-10">
+              <img
+                src="s1o.png"
+                className="object-cover absolute top-[0.5%] -left-[8%] -z-10 min-w-[125%]"
+              />
+              <img src="s1.png" className="object-cover h-[50vh] md:h-[80vh] z-10" />
             </div>
           </div>
-          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-[#E3D7FF] font-bold text-[3.8vw] leading-[1]">
-              Discover people at 
-            <span className="text-white uppercase lg:block font-bold text-[6vw] pl-[1%] lg:pl-0 leading-[1]">
+          <div className="md:w-1/2 mt-[5%] lg:mt-0">
+            <h1 className="text-[#8D69E2] font-bold text-[10vw] md:text-[3.8vw] leading-[1]">
+              Meet people at<br />
+              <span className="text-white uppercase lg:block font-bold text-[13vw] md:text-[6vw] leading-[1]">
               The square
-            </span>
+              </span>
             </h1>
-            <p className="text-[#CCD0FF] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
+            <p className="text-[#CCD0FF] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Find and interact with people who are on the same wavelength as
               you are.
               <br />
@@ -63,55 +58,49 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full px-[5%] md:min-h-screen py-[20%] md:py-[5%] bg-[#1E4B80] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+        <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#63163B] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start">
           <div className="flex flex-col items-center gap-4">
-            <div className="">
-              <img src="s2.png" className="object-cover" />
+            <div className="relative z-10">
+              <img src="s3.png" className="object-cover h-[50vh] md:h-[80vh]" />
+              <img
+                src="s3o.png"
+                className="object-cover absolute top-0 left-0 -z-10"
+              />
             </div>
           </div>
-          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-white font-bold text-[6vw] leading-[1]">
-              Always have someone to hang out with
+          <div className="md:w-1/2 mt-[5%] lg:mt-0">
+            <h1 className="text-white font-bold text-[10vw] md:text-[6vw] leading-[1]">
+              <span className="text-[#AB2153]">Hop into the<br /> </span> CONVERSATION
             </h1>
-            <p className="text-[#D6D7D7] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
-              Whether it&apos;s during your morning commute or a late-night
-              study session, always have a group of people to share and talk to.
-              It&apos;s now easier than ever to start conversations with people
-              around you.
-            </p>
-          </div>
-        </section>
-        <section className="w-full px-[5%] md:min-h-screen py-[20%] md:py-[5%] bg-[#63163B] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
-          <div className="flex flex-col items-center gap-4">
-            <div className="">
-              <img src="s3.png" className="object-cover" />
-            </div>
-          </div>
-          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-white font-bold text-[6vw] leading-[1]">
-              Hop into the conversation
-            </h1>
-            <p className="text-[#D6D7D7] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
+            <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               No more sliding into DM&apos;s. We help you start a conversation
               but it&apos;s on you to keep it up.
             </p>
           </div>
         </section>
-        <section className="w-full px-[5%] md:min-h-screen py-[20%] md:py-[5%] bg-[#418130] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
+        <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#317C1C] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start">
           <div className="flex flex-col items-center gap-4">
-            <div className="">
-              <img src="s4.png" className="object-cover" />
+            <div className="relative z-10">
+              <img src="s4.png" className="object-cover h-[50vh] md:h-[80vh]" />
+              <img
+                src="s4o.png"
+                className="absolute object-cover -top-[10%] -left-[10%] min-w-[125%] -z-10"
+              />
             </div>
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-[#F0F0F0] font-bold text-[6vw] pr-[2%] leading-[1]">
-              Clubs unique to you.
+            <h1 className="text-[#F0F0F0] font-bold text-[10vw] leading-[1]">
+              CLUBS <br />
+              <span className="text-[#0D6903]">unique to you.</span>
             </h1>
-            <p className="text-[#D6D7D7] text-[3vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
+            <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Find and join local communities where people with similar
               interests can hang out, share stories, and organise meet ups.
             </p>
           </div>
+        </section>
+        <section className="w-full px-[2%] py-[20%] md:py-[5%] bg-[#161623] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start">
+          <img src="ii.png" className="w-screen object-fit" />
         </section>
         {/* <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[20%] md:py-[5%]">
           <div className="flex flex-col items-center">
@@ -153,31 +142,37 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section className="w-full px-[5%] pt-[20%] pb-[10%] md:pb-0 md:pt-[10%] bg-[#161616] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[10%]">
+        <section className="w-full px-[10%] pb-[20%] md:pb-0 pt-[10%] bg-[#161616] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[5%] snap-start">
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw]">
-              People first
+            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+              People<br />first
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               We put &apos;social&apos; back in the social network
+              <br /><br />
+              <br />
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] md:pr-[40%] leading-tight">
-              Location based
+            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+              Location<br />based
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               The people and communities you discover change based on your
               location.
+              <br /><br />
+              <br />
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[5vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
-              Keep up with your City
+            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+              Keep up with<br />your City
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[3vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               A summary of all prominent events in your city is only a click
               away.
+              <br /><br />
+              <br />
             </p>
           </div>
         </section>
@@ -242,11 +237,11 @@ export default function Home() {
             </h4>
           </div>
         </section> */}
-        <section className="w-full px-[15%] py-[5%] bg-[#161616] flex flex-col md:flex-row gap-[5%]">
+        <section className="w-full px-[10%]  py-[5%] pb-[10%] bg-[#161616] flex flex-col md:flex-row gap-[5%]">
           <div className="h-full">
             <img src="i9.png" className="object-cover" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col pt-[5%] md:pt-0">
             <h2 className="text-white font-bold text-[4vw] md:text-[3vw] lg:text-[2vw]">
               We are working on it
             </h2>
@@ -256,7 +251,7 @@ export default function Home() {
             <form
               action="/api/email"
               method="POST"
-              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[10%] pt-[5%]"
+              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[5%] pt-[5%]"
               onSubmit={(e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
@@ -274,22 +269,34 @@ export default function Home() {
                   .catch((e) => console.error(e));
               }}
             >
+              <label className="md:hidden text-[#C9C9C9]">Name</label>
               <input
                 placeholder="Your name"
                 type="text"
-                required
                 name="name"
-                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md hidden md:block"
               />
+              <input
+                placeholder="John Doe"
+                type="text"
+                name="name"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
+              />
+              <label className="md:hidden text-[#C9C9C9]">Email</label>
               <input
                 placeholder="Your email"
                 type="email"
-                required
                 name="email"
-                className="bg-transparent placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md hidden md:block"
+              />
+              <input
+                placeholder="Johndoe@hmail.com"
+                type="email"
+                name="email"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
               />
               <button
-                className="w-[150%] bg-white rounded-md py-2 transition-colors duration-200 ease-in-out hover:bg-black hover:text-white"
+                className="w-fit px-4 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
                 type="submit"
               >
                 Submit
