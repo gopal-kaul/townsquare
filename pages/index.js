@@ -144,20 +144,20 @@ export default function Home() {
         </section> */}
         <section className="w-full px-[10%] pb-[20%] md:pb-0 pt-[10%] bg-[#161616] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[5%] snap-start">
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+            <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
               People<br />first
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               We put &apos;social&apos; back in the social network
               <br /><br />
               <br />
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+            <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
               Location<br />based
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               The people and communities you discover change based on your
               location.
               <br /><br />
@@ -165,10 +165,10 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
-            <h3 className="font-medium text-[#161616] text-[10vw] md:text-[4.2vw] lg:text-[2.5vw] leading-tight">
+            <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
               Keep up with<br />your City
             </h3>
-            <p className="text-[#535353] pt-[5%] text-[4.5vw] md:text-[2.3vw] lg:text-[1.5vw] leading-tight">
+            <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               A summary of all prominent events in your city is only a click
               away.
               <br /><br />
@@ -296,7 +296,7 @@ export default function Home() {
                 className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
               />
               <button
-                className="w-fit px-4 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
+                className="w-[150%] md:w-fit px-4 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
                 type="submit"
               >
                 Submit
