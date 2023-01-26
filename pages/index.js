@@ -17,11 +17,11 @@ export default function Home() {
           <h2 className="font-aveFedan text-titleColor text-titleSize top-[5%]  absolute  left-[5%]">
             townsquare
           </h2>
-          <img
-            src="hero.png"
-            alt="Hero text"
-            className="object-contain md:w-3/4"
-          />
+            <img
+              src="hero.png"
+              alt="Hero text"
+              className="object-contain md:w-1/2"
+            />
           <div className="w-full md:w-1/2">
             <h3 className="text-white text-[8vw] md:text-[4vw] lg:text-[3vw] font-bold leading-[1]">
               The better way to meet people in your city.
@@ -40,14 +40,18 @@ export default function Home() {
                 src="s1o.png"
                 className="object-cover absolute top-[0.5%] -left-[8%] -z-10 min-w-[125%]"
               />
-              <img src="s1.png" className="object-cover h-[50vh] md:h-[80vh] z-10" />
+              <img
+                src="s1.png"
+                className="object-cover h-[50vh] md:h-[80vh] z-10"
+              />
             </div>
           </div>
           <div className="md:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-[#8D69E2] font-bold text-[10vw] md:text-[3.8vw] leading-[1]">
-              Meet people at<br />
+              Meet people at
+              <br />
               <span className="text-white uppercase lg:block font-bold text-[13vw] md:text-[6vw] leading-[1]">
-              The square
+                The square
               </span>
             </h1>
             <p className="text-[#CCD0FF] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
@@ -70,7 +74,11 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[10vw] md:text-[6vw] leading-[1]">
-              <span className="text-[#AB2153]">Hop into the<br /> </span> CONVERSATION
+              <span className="text-[#AB2153]">
+                Hop into the
+                <br />{" "}
+              </span>{" "}
+              CONVERSATION
             </h1>
             <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               No more sliding into DM&apos;s. We help you start a conversation
@@ -145,33 +153,42 @@ export default function Home() {
         <section className="w-full px-[10%] pb-[20%] md:pb-0 pt-[10%] bg-[#161616] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[5%] snap-start">
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
             <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
-              People<br />first
+              People
+              <br />
+              first
             </h3>
             <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               We put &apos;social&apos; back in the social network
-              <br /><br />
+              <br />
+              <br />
               <br />
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
             <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
-              Location<br />based
+              Location
+              <br />
+              based
             </h3>
             <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               The people and communities you discover change based on your
               location.
-              <br /><br />
+              <br />
+              <br />
               <br />
             </p>
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl px-[5%] py-[5%]">
             <h3 className="font-medium text-[#161616] text-[10vw] sm:text-[4.2vw] lg:text-[2.5vw] leading-tight">
-              Keep up with<br />your City
+              Keep up with
+              <br />
+              your City
             </h3>
             <p className="text-[#535353] pt-[5%] text-[4.5vw] sm:text-[2.3vw] lg:text-[1.5vw] leading-tight">
               A summary of all prominent events in your city is only a click
               away.
-              <br /><br />
+              <br />
+              <br />
               <br />
             </p>
           </div>
