@@ -259,16 +259,16 @@ export default function Home() {
             <img src="i9.png" className="object-cover" />
           </div>
           <div className="flex flex-col pt-[5%] md:pt-0">
-            <h2 className="text-white font-bold text-[4vw] md:text-[3vw] lg:text-[2vw]">
-              We are working on it
+            <h2 className="text-white font-bold text-[7vw] md:text-[3vw] lg:text-[2vw]">
+              We are working on it!
             </h2>
-            <h4 className="text-[#B7B7B7] text-[3vw] md:text-[2vw] lg:text-[1.5vw] leading-tight">
-              In the meantime, here&apos;s how you can reach out to us
+            <h4 className="text-[#B7B7B7] text-[4.5vw] md:text-[2vw] lg:text-[1.5vw] leading-tight">
+              In the meantime, here&apos;s how you can reach out to us.
             </h4>
             <form
               action="/api/email"
               method="POST"
-              className="flex flex-col text-[2.5vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[5%] pt-[5%]"
+              className="flex flex-col text-[4vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[5%] md:gap-[10%] pt-[5%] pb-[10%] md:pb-0"
               onSubmit={(e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
@@ -297,7 +297,7 @@ export default function Home() {
                 placeholder="John Doe"
                 type="text"
                 name="name"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] py-1 px-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
               />
               <label className="md:hidden text-[#C9C9C9]">Email</label>
               <input
@@ -310,7 +310,7 @@ export default function Home() {
                 placeholder="Johndoe@hmail.com"
                 type="email"
                 name="email"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] py-1 px-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
               />
               <button
                 className="w-[150%] md:w-fit px-4 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
