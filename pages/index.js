@@ -42,7 +42,7 @@ export default function Home() {
               />
               <img
                 src="s1.png"
-                className="object-cover h-[50vh] md:h-[80vh] z-10"
+                className="object-cover h-[40vh] md:h-[80vh] z-10"
               />
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
         <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#63163B] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start">
           <div className="flex flex-col items-center gap-4">
             <div className="relative z-10">
-              <img src="s3.png" className="object-cover h-[50vh] md:h-[80vh]" />
+              <img src="s3.png" className="object-cover h-[40vh] md:h-[80vh]" />
               <img
                 src="s3o.png"
                 className="object-cover absolute top-0 left-0 -z-10"
@@ -97,9 +97,9 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-[#F0F0F0] font-bold text-[6vw] leading-[1]">
+            <h1 className="text-[#F0F0F0] font-bold text-[15vw] md:text-[10vw] leading-[1]">
               CLUBS <br />
-              <span className="text-[#0D6903] text-[5vw] leading-[1]">unique to you.</span>
+              <span className="text-[#0D6903] text-[10vw] md:text-[5vw] leading-[1]">unique to you.</span>
             </h1>
             <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Find and join local communities where people with similar
@@ -107,8 +107,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full px-[2%] py-[20%] md:py-[5%] bg-[#161623] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start">
-          <img src="ii.png" className="w-screen object-fit" />
+        <section className="w-full px-[2%] py-[20%] md:py-[5%] bg-[#161623] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start md:h-screen">
+          <img src="ii.png" className="object-contain h-auto md:h-[80vh]" />
         </section>
         {/* <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[20%] md:py-[5%]">
           <div className="flex flex-col items-center">
@@ -291,7 +291,7 @@ export default function Home() {
                 placeholder="Your name"
                 type="text"
                 name="name"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md hidden md:block"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[200%] rounded-md hidden md:block"
               />
               <input
                 placeholder="John Doe"
@@ -304,7 +304,7 @@ export default function Home() {
                 placeholder="Your email"
                 type="email"
                 name="email"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] rounded-md hidden md:block"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[200%] rounded-md hidden md:block"
               />
               <input
                 placeholder="Johndoe@hmail.com"
@@ -313,7 +313,7 @@ export default function Home() {
                 className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] py-1 px-[2%] focus:outline-none w-[150%] rounded-md md:hidden"
               />
               <button
-                className="w-[150%] md:w-fit px-4 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
+                className="w-[150%] md:w-fit px-8 rounded-md py-2 text-[#161616] bg-[#DDDDDD]"
                 type="submit"
               >
                 Submit
