@@ -97,9 +97,9 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-[#F0F0F0] font-bold text-[10vw] leading-[1]">
+            <h1 className="text-[#F0F0F0] font-bold text-[6vw] leading-[1]">
               CLUBS <br />
-              <span className="text-[#0D6903]">unique to you.</span>
+              <span className="text-[#0D6903] text-[5vw] leading-[1]">unique to you.</span>
             </h1>
             <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Find and join local communities where people with similar
