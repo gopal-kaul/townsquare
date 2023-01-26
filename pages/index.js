@@ -268,7 +268,7 @@ export default function Home() {
             <form
               action="/api/email"
               method="POST"
-              className="flex flex-col text-[4vw] md:text-[2vw] lg:text-[1vw] w-fit gap-[5%] md:gap-[10%] pt-[5%] pb-[10%] md:pb-0"
+              className="flex flex-col text-[4vw] md:text-[2vw] lg:text-[1vw] w-fit gap-2 md:gap-5 pt-[5%] pb-[10%] md:pb-0"
               onSubmit={(e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
