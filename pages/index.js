@@ -38,11 +38,11 @@ export default function Home() {
             <div className="relative z-10">
               <img
                 src="s1o.png"
-                className="object-cover absolute top-[0.5%] -left-[8%] -z-10 min-w-[125%]"
+                className="object-contain absolute top-[0.5%] -left-[8%] -z-10 min-w-[125%]"
               />
               <img
                 src="s1.png"
-                className="object-cover h-[40vh] md:h-[80vh] z-10"
+                className="object-contain max-h-[40vh] md:max-h-[80vh] z-10"
               />
             </div>
           </div>
@@ -65,10 +65,10 @@ export default function Home() {
         <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#63163B] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start">
           <div className="flex flex-col items-center gap-4">
             <div className="relative z-10">
-              <img src="s3.png" className="object-cover h-[40vh] md:h-[80vh]" />
+              <img src="s3.png" className="object-contain max-h-[40vh] md:max-h-[80vh]" />
               <img
                 src="s3o.png"
-                className="object-cover absolute top-0 left-0 -z-10"
+                className="object-contain absolute top-0 left-0 -z-10"
               />
             </div>
           </div>
@@ -86,20 +86,20 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#317C1C] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start">
+        <section className="w-full px-[5%] h-screen py-[20%] md:py-[5%] bg-[#317C1C] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start">
           <div className="flex flex-col items-center gap-4">
             <div className="relative z-10">
-              <img src="s4.png" className="object-cover h-[50vh] md:h-[80vh]" />
+              <img src="s4.png" className="object-contain max-h-[50vh] md:max-h-[80vh]" />
               <img
                 src="s4o.png"
-                className="absolute object-cover -top-[10%] -left-[10%] min-w-[125%] -z-10"
+                className="absolute object-contain -top-[10%] -left-[10%] min-w-[125%] -z-10"
               />
             </div>
           </div>
-          <div className="lg:w-1/2 mt-[5%] lg:mt-0">
-            <h1 className="text-[#F0F0F0] font-bold text-[15vw] md:text-[10vw] leading-[1]">
+          <div className="md:w-1/2 mt-[5%] md:mt-0">
+            <h1 className="text-[#F0F0F0] font-bold text-[10vw] md:text-[6vw] leading-[1]">
               CLUBS <br />
-              <span className="text-[#0D6903] text-[10vw] md:text-[5vw] leading-[1]">unique to you.</span>
+              <span className="text-[#0D6903] text-[10vw] md:text-[6vw] leading-[1]">unique to you.</span>
             </h1>
             <p className="text-[#D6D7D7] text-[5vw] md:text-[2.2vw] lg:text-[1.8vw] leading-tight pt-[2%]">
               Find and join local communities where people with similar
@@ -108,14 +108,14 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full px-[2%] py-[20%] md:py-[5%] bg-[#161623] flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center snap-start md:h-screen">
-          <img src="ii.png" className="object-contain h-auto md:h-[80vh]" />
+          <img src="ii.png" className="object-contain h-auto md:max-h-[80vh]" />
         </section>
         {/* <section className="px-[5%] bg-[#161623] w-full grid place-items-center py-[20%] md:py-[5%]">
           <div className="flex flex-col items-center">
             <div className="relative w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
-              <img src="i1.png" className="object-cover" />
-              <div className="bg-[#C358B3] top-[22%] h-[3px] w-[50%] absolute z-10"></div>
-              <div className="bg-[#C358B3] top-[22%] h-[3px] w-[3px] scale-[3] lg:scale-[5] rounded-full absolute z-10"></div>
+              <img src="i1.png" className="object-contain" />
+              <div className="bg-[#C358B3] top-[22%] max-h-[3px] w-[50%] absolute z-10"></div>
+              <div className="bg-[#C358B3] top-[22%] max-h-[3px] w-[3px] scale-[3] lg:scale-[5] rounded-full absolute z-10"></div>
               <div className="top-[18%] absolute z-10 -left-[24%] text-[1.7vw] leading-tight">
                 <p className="text-white font-bold">5km thing</p>
                 <p className="text-[#9F9FFF]">
@@ -125,9 +125,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative z-10 w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
-              <img src="i2.png" className="object-cover -mt-[20%]" />
-              <div className="bg-[#C358B3] -top-[20%] h-[3px] w-[50%] absolute z-10 right-0"></div>
-              <div className="bg-[#C358B3] -top-[20%] h-[3px] w-[3px] rounded-full absolute scale-[3] lg:scale-[5] z-10 right-0"></div>
+              <img src="i2.png" className="object-contain -mt-[20%]" />
+              <div className="bg-[#C358B3] -top-[20%] max-h-[3px] w-[50%] absolute z-10 right-0"></div>
+              <div className="bg-[#C358B3] -top-[20%] max-h-[3px] w-[3px] rounded-full absolute scale-[3] lg:scale-[5] z-10 right-0"></div>
               <div className="absolute z-10 text-[1.7vw] leading-tight -top-[24%] -right-[35%]">
                 <p className="text-white font-bold">People first</p>
                 <p className="text-[#9F9FFF]">
@@ -137,9 +137,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative z-10 w-1/2 md:w-2/3 lg:w-3/4 xl:w-full">
-              <img src="i3.png" className="object-cover -mt-[15%]" />
-              <div className="bg-[#C358B3] -top-[7%] h-[3px] w-[80%] absolute z-10"></div>
-              <div className="bg-[#C358B3] -top-[7%] h-[3px] w-[3px] rounded-full absolute z-10 scale-[3] lg:scale-[5]"></div>
+              <img src="i3.png" className="object-contain -mt-[15%]" />
+              <div className="bg-[#C358B3] -top-[7%] max-h-[3px] w-[80%] absolute z-10"></div>
+              <div className="bg-[#C358B3] -top-[7%] max-h-[3px] w-[3px] rounded-full absolute z-10 scale-[3] lg:scale-[5]"></div>
               <div className="-top-[9%] absolute z-10 -left-[26%] text-[1.7vw] leading-tight">
                 <p className="text-white font-bold">Filters</p>
                 <p className="text-[#9F9FFF]">
@@ -196,13 +196,13 @@ export default function Home() {
         {/* <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
           <div className="flex flex-col gap-4">
             <div className="">
-              <img src="i4.png" className="object-cover" />
+              <img src="i4.png" className="object-contain" />
             </div>
             <div className="">
-              <img src="i5.png" className="object-cover" />
+              <img src="i5.png" className="object-contain" />
             </div>
             <div className="">
-              <img src="i6.png" className="object-cover" />
+              <img src="i6.png" className="object-contain" />
             </div>
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
@@ -217,7 +217,7 @@ export default function Home() {
         </section> */}
         {/* <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex gap-[5%] flex-col lg:flex-row-reverse items-center justify-center">
           <div className="">
-            <img src="i7.png" className="object-cover" />
+            <img src="i7.png" className="object-contain" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[6vw] leading-[1]">
@@ -231,7 +231,7 @@ export default function Home() {
         </section>
         <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-black flex flex-col lg:flex-row-reverse gap-[5%] items-center justify-center">
           <div className="">
-            <img src="i8.png" className="object-cover" />
+            <img src="i8.png" className="object-contain" />
           </div>
           <div className="lg:w-1/2 mt-[5%] lg:mt-0">
             <h1 className="text-white font-bold text-[6vw] leading-[1]">
@@ -256,7 +256,7 @@ export default function Home() {
         </section> */}
         <section className="w-full px-[10%]  py-[5%] pb-[10%] bg-[#161616] flex flex-col md:flex-row gap-[5%]">
           <div className="h-full">
-            <img src="i9.png" className="object-cover" />
+            <img src="i9.png" className="object-contain" />
           </div>
           <div className="flex flex-col pt-[5%] md:pt-0">
             <h2 className="text-white font-bold text-[7vw] md:text-[3vw] lg:text-[2vw]">
@@ -291,7 +291,7 @@ export default function Home() {
                 placeholder="Your name"
                 type="text"
                 name="name"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[200%] rounded-md hidden md:block"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] lg:w-[200%] rounded-md hidden md:block"
               />
               <input
                 placeholder="John Doe"
@@ -304,7 +304,7 @@ export default function Home() {
                 placeholder="Your email"
                 type="email"
                 name="email"
-                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[200%] rounded-md hidden md:block"
+                className="bg-transparent placeholder:text-[#3F3F3F] md:placeholder:text-[#C9C9C9] text-[#676767] border border-[#C9C9C9] p-[2%] focus:outline-none w-[150%] lg:w-[200%] rounded-md hidden md:block"
               />
               <input
                 placeholder="Johndoe@hmail.com"
