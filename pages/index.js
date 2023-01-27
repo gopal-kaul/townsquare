@@ -20,7 +20,7 @@ export default function Home() {
             <img
               src="hero.png"
               alt="Hero text"
-              className="object-contain md:w-1/2"
+              className="object-contain md:w-1/2 max-h-[40vh] md:max-h-[80vh]"
             />
           <div className="w-full md:w-1/2">
             <h3 className="text-white text-[8vw] md:text-[4vw] lg:text-[3vw] font-bold leading-[1]">
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full px-[5%] py-[20%] md:py-[5%] bg-[#493672] flex flex-col md:flex-row-reverse gap-[5%] items-center justify-center snap-start h-screen">
-          <div className="flex flex-col items-center gap-4 w-full lg:w-1/2">
+          <div className="flex flex-col items-center gap-4 w-full md:w-1/2">
             <div className="relative z-10">
               <img
                 src="s1o.png"
